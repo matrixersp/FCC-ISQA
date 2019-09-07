@@ -26,7 +26,7 @@ module.exports = function (app) {
         : !initNum ? 'invalid number'
           : !initUnit ? 'invalid unit' : '';
 
-      if (msg) return res.status(400).send(msg);
+      if (msg) return res.status(200).send(msg);
 
       var returnNum = convertHandler.convert(initNum, initUnit);
       var returnUnit = convertHandler.getReturnUnit(initUnit);

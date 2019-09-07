@@ -17,10 +17,14 @@ function ConvertHandler() {
     if (str.length === 0) return 1;
     if (str.split('/').length > 2) return null;
 
-    const [numerator, denominator] = str.split('/');
-    const result = numerator / denominator || Number(numerator);
+    if (str.split('/').length === 1 && !isNaN(str)) {
+      return Number.parseFloat(Number(str).toFixed(5));
+    }
 
-    if (Number.isNaN(result)) return null;
+    const [numerator, denominator] = str.split('/');
+    if (denominator === '' || isNaN(denominator)) return null;
+
+    let result = numerator / denominator;
     return Number.parseFloat(result.toFixed(5));
   };
 

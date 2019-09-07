@@ -63,7 +63,7 @@
     integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
   <script>
     $(function () {
-      $('#convertForm').submit(function () {
+      $('#convertForm').submit(function (event) {
         event.preventDefault();
         $.ajax({
           url: '/api/convert',
