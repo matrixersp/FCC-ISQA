@@ -6,5 +6,5 @@
 
 3. [Personal Library](https://github.com/matrixersp/FCC-ISQA/tree/master/PersonalLibrary) | [Glitch](https://better-flyaway.glitch.me)
 
-4. [Personal Library](https://github.com/matrixersp/FCC-ISQA/tree/master/StockChecker) | [Glitch](https://cooperative-anger.glitch.me)
+4. [Stock Price Checker](https://github.com/matrixersp/FCC-ISQA/tree/master/StockChecker) | [Glitch](https://cooperative-anger.glitch.me)
 
